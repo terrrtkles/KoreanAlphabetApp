@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD18767D2485F5B1005D074A /* ConsonantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD18767C2485F5B1005D074A /* ConsonantsView.swift */; };
+		FD1CF8D924871C3F00ED3B79 /* ConsonantNamesGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1CF8D824871C3F00ED3B79 /* ConsonantNamesGenerator.swift */; };
+		FD1CF8DB2487263400ED3B79 /* SelectCons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1CF8DA2487263400ED3B79 /* SelectCons.swift */; };
+		FD3A92A42484B90B00932750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A92A32484B90B00932750 /* AppDelegate.swift */; };
+		FD3A92A62484B90B00932750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A92A52484B90B00932750 /* SceneDelegate.swift */; };
+		FD3A92A82484B90B00932750 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A92A72484B90B00932750 /* MenuViewController.swift */; };
+		FD3A92AB2484B90B00932750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3A92A92484B90B00932750 /* Main.storyboard */; };
+		FD3A92AD2484B90B00932750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3A92AC2484B90B00932750 /* Assets.xcassets */; };
+		FD3A92B02484B90B00932750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3A92AE2484B90B00932750 /* LaunchScreen.storyboard */; };
+		FD3A92B92484C45900932750 /* Consonants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A92B82484C45900932750 /* Consonants.swift */; };
+		FD3A92BB2484C4AB00932750 /* Vowels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A92BA2484C4AB00932750 /* Vowels.swift */; };
+		FD3A92BD2484C4C700932750 /* ConsonantNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A92BC2484C4C700932750 /* ConsonantNames.swift */; };
+		FD3A92BF2484CA3000932750 /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A92BE2484CA3000932750 /* CardSet.swift */; };
+		FD3A92C12484CC8000932750 /* ListGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A92C02484CC8000932750 /* ListGeneratorViewController.swift */; };
+		FD4BB87A2486E785007DB6C8 /* VowelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4BB8792486E785007DB6C8 /* VowelsView.swift */; };
+		FD4BB87C2486E794007DB6C8 /* ConsonantNamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4BB87B2486E794007DB6C8 /* ConsonantNamesView.swift */; };
+		FD4BB87E2486EB54007DB6C8 /* VowelsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4BB87D2486EB54007DB6C8 /* VowelsGenerator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD18767C2485F5B1005D074A /* ConsonantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantsView.swift; sourceTree = "<group>"; };
+		FD1CF8D824871C3F00ED3B79 /* ConsonantNamesGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantNamesGenerator.swift; sourceTree = "<group>"; };
+		FD1CF8DA2487263400ED3B79 /* SelectCons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCons.swift; sourceTree = "<group>"; };
+		FD3A92A02484B90B00932750 /* Learn Korean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn Korean.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A92A32484B90B00932750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD3A92A52484B90B00932750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD3A92A72484B90B00932750 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FD3A92AA2484B90B00932750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD3A92AC2484B90B00932750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD3A92AF2484B90B00932750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD3A92B12484B90B00932750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD3A92B82484C45900932750 /* Consonants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consonants.swift; sourceTree = "<group>"; };
+		FD3A92BA2484C4AB00932750 /* Vowels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vowels.swift; sourceTree = "<group>"; };
+		FD3A92BC2484C4C700932750 /* ConsonantNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantNames.swift; sourceTree = "<group>"; };
+		FD3A92BE2484CA3000932750 /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
+		FD3A92C02484CC8000932750 /* ListGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGeneratorViewController.swift; sourceTree = "<group>"; };
+		FD4BB8792486E785007DB6C8 /* VowelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelsView.swift; sourceTree = "<group>"; };
+		FD4BB87B2486E794007DB6C8 /* ConsonantNamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantNamesView.swift; sourceTree = "<group>"; };
+		FD4BB87D2486EB54007DB6C8 /* VowelsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelsGenerator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD3A929D2484B90B00932750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD18767E2485F696005D074A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A92A72484B90B00932750 /* MenuViewController.swift */,
+				FD3A92C02484CC8000932750 /* ListGeneratorViewController.swift */,
+				FD18767C2485F5B1005D074A /* ConsonantsView.swift */,
+				FD4BB8792486E785007DB6C8 /* VowelsView.swift */,
+				FD4BB87B2486E794007DB6C8 /* ConsonantNamesView.swift */,
+				FD4BB87D2486EB54007DB6C8 /* VowelsGenerator.swift */,
+				FD1CF8D824871C3F00ED3B79 /* ConsonantNamesGenerator.swift */,
+				FD1CF8DA2487263400ED3B79 /* SelectCons.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FD3A92972484B90B00932750 = {
+			isa = PBXGroup;
+			children = (
+				FD3A92A22484B90B00932750 /* Learn Korean */,
+				FD3A92A12484B90B00932750 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD3A92A12484B90B00932750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A92A02484B90B00932750 /* Learn Korean.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD3A92A22484B90B00932750 /* Learn Korean */ = {
+			isa = PBXGroup;
+			children = (
+				FD18767E2485F696005D074A /* ViewControllers */,
+				FD3A92B72484C44200932750 /* Buttons */,
+				FD3A92A32484B90B00932750 /* AppDelegate.swift */,
+				FD3A92A52484B90B00932750 /* SceneDelegate.swift */,
+				FD3A92A92484B90B00932750 /* Main.storyboard */,
+				FD3A92AC2484B90B00932750 /* Assets.xcassets */,
+				FD3A92AE2484B90B00932750 /* LaunchScreen.storyboard */,
+				FD3A92B12484B90B00932750 /* Info.plist */,
+				FD3A92BE2484CA3000932750 /* CardSet.swift */,
+			);
+			path = "Learn Korean";
+			sourceTree = "<group>";
+		};
+		FD3A92B72484C44200932750 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A92B82484C45900932750 /* Consonants.swift */,
+				FD3A92BA2484C4AB00932750 /* Vowels.swift */,
+				FD3A92BC2484C4C700932750 /* ConsonantNames.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD3A929F2484B90B00932750 /* Learn Korean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A92B42484B90B00932750 /* Build configuration list for PBXNativeTarget "Learn Korean" */;
+			buildPhases = (
+				FD3A929C2484B90B00932750 /* Sources */,
+				FD3A929D2484B90B00932750 /* Frameworks */,
+				FD3A929E2484B90B00932750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Learn Korean";
+			productName = "Learn Korean";
+			productReference = FD3A92A02484B90B00932750 /* Learn Korean.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD3A92982484B90B00932750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Teresa Cheung";
+				TargetAttributes = {
+					FD3A929F2484B90B00932750 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FD3A929B2484B90B00932750 /* Build configuration list for PBXProject "Learn Korean" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD3A92972484B90B00932750;
+			productRefGroup = FD3A92A12484B90B00932750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD3A929F2484B90B00932750 /* Learn Korean */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD3A929E2484B90B00932750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A92B02484B90B00932750 /* LaunchScreen.storyboard in Resources */,
+				FD3A92AD2484B90B00932750 /* Assets.xcassets in Resources */,
+				FD3A92AB2484B90B00932750 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD3A929C2484B90B00932750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A92BB2484C4AB00932750 /* Vowels.swift in Sources */,
+				FD3A92C12484CC8000932750 /* ListGeneratorViewController.swift in Sources */,
+				FD3A92A82484B90B00932750 /* MenuViewController.swift in Sources */,
+				FD4BB87E2486EB54007DB6C8 /* VowelsGenerator.swift in Sources */,
+				FD1CF8DB2487263400ED3B79 /* SelectCons.swift in Sources */,
+				FD4BB87C2486E794007DB6C8 /* ConsonantNamesView.swift in Sources */,
+				FD18767D2485F5B1005D074A /* ConsonantsView.swift in Sources */,
+				FD1CF8D924871C3F00ED3B79 /* ConsonantNamesGenerator.swift in Sources */,
+				FD3A92BD2484C4C700932750 /* ConsonantNames.swift in Sources */,
+				FD3A92BF2484CA3000932750 /* CardSet.swift in Sources */,
+				FD3A92B92484C45900932750 /* Consonants.swift in Sources */,
+				FD3A92A42484B90B00932750 /* AppDelegate.swift in Sources */,
+				FD4BB87A2486E785007DB6C8 /* VowelsView.swift in Sources */,
+				FD3A92A62484B90B00932750 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD3A92A92484B90B00932750 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3A92AA2484B90B00932750 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD3A92AE2484B90B00932750 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3A92AF2484B90B00932750 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD3A92B22484B90B00932750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD3A92B32484B90B00932750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD3A92B52484B90B00932750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AF4PYA83G3;
+				INFOPLIST_FILE = "Learn Korean/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teresacheung.Learn-Korean";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FD3A92B62484B90B00932750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AF4PYA83G3;
+				INFOPLIST_FILE = "Learn Korean/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teresacheung.Learn-Korean";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD3A929B2484B90B00932750 /* Build configuration list for PBXProject "Learn Korean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A92B22484B90B00932750 /* Debug */,
+				FD3A92B32484B90B00932750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A92B42484B90B00932750 /* Build configuration list for PBXNativeTarget "Learn Korean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A92B52484B90B00932750 /* Debug */,
+				FD3A92B62484B90B00932750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD3A92982484B90B00932750 /* Project object */;
+}

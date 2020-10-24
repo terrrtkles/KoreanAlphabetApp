@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aro-vk-pXq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="7cV-9u-bJd">
+            <objects>
+                <viewController id="Aro-vk-pXq" customClass="MenuViewController" customModule="Learn_Korean" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2jW-4H-l5n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfq-QV-KEh" customClass="Consonants" customModule="Learn_Korean" customModuleProvider="target">
+                                <rect key="frame" x="144" y="304" width="126" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Consonants" backgroundImage="button_bkgd">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CDn-er-wRP" kind="show" id="oJP-ec-BfC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm7-t3-02T" customClass="Vowels" customModule="Learn_Korean" customModuleProvider="target">
+                                <rect key="frame" x="144" y="404" width="126" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Vowels" backgroundImage="button_bkgd">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ib7-mf-ot3" kind="show" id="lUy-CM-CRB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1u-5d-Zx0" customClass="ConsonantNames" customModule="Learn_Korean" customModuleProvider="target">
+                                <rect key="frame" x="144" y="504" width="126" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Consonant Names" backgroundImage="button_bkgd">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="daN-7M-02W" kind="show" id="nMC-nA-aL5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Korean  한글" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIA-6j-VsL">
+                                <rect key="frame" x="95" y="120" width="224" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OM2-m6-rSc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.92549019607843142" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T1u-5d-Zx0" firstAttribute="top" secondItem="Lm7-t3-02T" secondAttribute="bottom" constant="70" id="0VH-PH-CJ2"/>
+                            <constraint firstItem="Jfq-QV-KEh" firstAttribute="leading" secondItem="Lm7-t3-02T" secondAttribute="leading" id="67K-Ml-04P"/>
+                            <constraint firstItem="Jfq-QV-KEh" firstAttribute="trailing" secondItem="Lm7-t3-02T" secondAttribute="trailing" id="Mfa-rW-sCX"/>
+                            <constraint firstItem="jIA-6j-VsL" firstAttribute="centerX" secondItem="Jfq-QV-KEh" secondAttribute="centerX" id="N40-OO-vVd"/>
+                            <constraint firstItem="t89-jp-wSR" firstAttribute="bottom" secondItem="T1u-5d-Zx0" secondAttribute="bottom" constant="328" id="Qy3-1C-WZD"/>
+                            <constraint firstItem="jIA-6j-VsL" firstAttribute="centerX" secondItem="2jW-4H-l5n" secondAttribute="centerX" id="Z18-As-nIa"/>
+                            <constraint firstItem="jIA-6j-VsL" firstAttribute="leading" secondItem="t89-jp-wSR" secondAttribute="leading" constant="95" id="ak1-sp-62l"/>
+                            <constraint firstItem="jIA-6j-VsL" firstAttribute="top" secondItem="t89-jp-wSR" secondAttribute="top" constant="76" id="e9q-Zu-B2N"/>
+                            <constraint firstItem="Lm7-t3-02T" firstAttribute="top" secondItem="Jfq-QV-KEh" secondAttribute="bottom" constant="70" id="hcX-BF-E6d"/>
+                            <constraint firstItem="Lm7-t3-02T" firstAttribute="leading" secondItem="T1u-5d-Zx0" secondAttribute="leading" id="ijb-NS-GGM"/>
+                            <constraint firstItem="Lm7-t3-02T" firstAttribute="trailing" secondItem="T1u-5d-Zx0" secondAttribute="trailing" id="oUS-5u-lNL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t89-jp-wSR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOy-9P-qGj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="43.526785714285715"/>
+        </scene>
+        <!--Vowels View-->
+        <scene sceneID="iSk-5S-pZY">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Ib7-mf-ot3" customClass="VowelsView" customModule="Learn_Korean" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q7V-IB-n1M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4f-Sb-noD">
+                                <rect key="frame" x="52" y="344" width="310" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fzd-oR-R3y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Practice All Vowels"/>
+                                <connections>
+                                    <action selector="listSelect:" destination="Ib7-mf-ot3" eventType="touchUpInside" id="PWk-7u-f5Y"/>
+                                    <segue destination="B6C-Ft-6L6" kind="show" id="Mwx-Zb-h9f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l55-dN-VPA">
+                                <rect key="frame" x="52" y="480" width="310" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vLy-GP-TmF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Practice Some Vowels"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY2-E6-OJB">
+                                <rect key="frame" x="20" y="44" width="80" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="4hG-2e-k1m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="Ib7-mf-ot3" eventType="touchUpInside" id="Yh4-RT-4xw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.92549019607843142" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h4f-Sb-noD" firstAttribute="centerX" secondItem="Q7V-IB-n1M" secondAttribute="centerX" id="DDc-bS-K5S"/>
+                            <constraint firstItem="eY2-E6-OJB" firstAttribute="leading" secondItem="Q7V-IB-n1M" secondAttribute="leadingMargin" id="GcY-4G-icq"/>
+                            <constraint firstItem="l55-dN-VPA" firstAttribute="top" secondItem="h4f-Sb-noD" secondAttribute="bottom" constant="96" id="WQH-DO-IEw"/>
+                            <constraint firstItem="7am-1P-LAF" firstAttribute="trailing" secondItem="eY2-E6-OJB" secondAttribute="trailing" constant="314" id="XSw-Ub-cUy"/>
+                            <constraint firstItem="h4f-Sb-noD" firstAttribute="leading" secondItem="l55-dN-VPA" secondAttribute="leading" id="abb-ZA-WGg"/>
+                            <constraint firstItem="h4f-Sb-noD" firstAttribute="trailing" secondItem="l55-dN-VPA" secondAttribute="trailing" id="fCu-3y-skl"/>
+                            <constraint firstItem="eY2-E6-OJB" firstAttribute="top" secondItem="7am-1P-LAF" secondAttribute="top" id="ll8-0b-IBA"/>
+                            <constraint firstItem="7am-1P-LAF" firstAttribute="bottom" secondItem="l55-dN-VPA" secondAttribute="bottom" constant="342" id="mSY-zh-kLY"/>
+                            <constraint firstItem="h4f-Sb-noD" firstAttribute="leading" secondItem="7am-1P-LAF" secondAttribute="leading" constant="52" id="vsQ-ni-oK3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7am-1P-LAF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jhS-pF-CP2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQv-aV-KUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="43.526785714285715"/>
+        </scene>
+        <!--Consonant Names View-->
+        <scene sceneID="1Bn-dN-OGp">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="daN-7M-02W" customClass="ConsonantNamesView" customModule="Learn_Korean" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F3z-H5-dka">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhm-Y9-wBC">
+                                <rect key="frame" x="36" y="353" width="342" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="K2H-JY-wiF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Practice All Consonant Names"/>
+                                <connections>
+                                    <action selector="ListSelect:" destination="daN-7M-02W" eventType="touchUpInside" id="j4R-lB-deG"/>
+                                    <segue destination="1Rn-4I-LSV" kind="show" id="hls-0R-WVQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAF-yH-abg">
+                                <rect key="frame" x="36" y="476" width="342" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="D7v-w6-rb0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Practice Some Consonant Names"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYX-Ax-0HV">
+                                <rect key="frame" x="20" y="44" width="80" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="sN0-yS-C5v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="daN-7M-02W" eventType="touchUpInside" id="ZtQ-hY-K3E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.92549019607843142" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iwe-Ha-KKu" firstAttribute="bottom" secondItem="AAF-yH-abg" secondAttribute="bottom" constant="346" id="0My-c2-wgJ"/>
+                            <constraint firstItem="Yhm-Y9-wBC" firstAttribute="leading" secondItem="AAF-yH-abg" secondAttribute="leading" id="6PR-dC-DE0"/>
+                            <constraint firstItem="dYX-Ax-0HV" firstAttribute="leading" secondItem="F3z-H5-dka" secondAttribute="leadingMargin" id="JXk-Gk-jDj"/>
+                            <constraint firstItem="AAF-yH-abg" firstAttribute="top" secondItem="Yhm-Y9-wBC" secondAttribute="bottom" constant="83" id="Sod-qp-Nwq"/>
+                            <constraint firstItem="Yhm-Y9-wBC" firstAttribute="leading" secondItem="iwe-Ha-KKu" secondAttribute="leading" constant="36" id="XMu-6X-SpM"/>
+                            <constraint firstItem="Yhm-Y9-wBC" firstAttribute="trailing" secondItem="AAF-yH-abg" secondAttribute="trailing" id="cbj-Xe-a2M"/>
+                            <constraint firstItem="Yhm-Y9-wBC" firstAttribute="centerX" secondItem="F3z-H5-dka" secondAttribute="centerX" id="feD-nF-7ht"/>
+                            <constraint firstItem="dYX-Ax-0HV" firstAttribute="top" secondItem="iwe-Ha-KKu" secondAttribute="top" id="xCI-F0-AVq"/>
+                            <constraint firstItem="iwe-Ha-KKu" firstAttribute="trailing" secondItem="dYX-Ax-0HV" secondAttribute="trailing" constant="314" id="y4K-qN-daD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iwe-Ha-KKu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XUv-jU-dR8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YgL-HT-m3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="780.80357142857144"/>
+        </scene>
+        <!--Consonants View-->
+        <scene sceneID="yCI-Y4-LpW">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="CDn-er-wRP" customClass="ConsonantsView" customModule="Learn_Korean" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZE-pp-Yuq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uio-Gv-TXL">
+                                <rect key="frame" x="20" y="44" width="80" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="CDn-er-wRP" eventType="touchUpInside" id="FSo-fq-mJV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UY-FC-JGe">
+                                <rect key="frame" x="55" y="463" width="304" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YA8-vM-X8Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Practice Some Consonants"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhg-Pg-RR0">
+                                <rect key="frame" x="55" y="350" width="304" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xRv-PD-wur"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Practice All Consonants"/>
+                                <connections>
+                                    <action selector="GenerateAllCon:" destination="CDn-er-wRP" eventType="touchUpInside" id="6uO-Wy-P4l"/>
+                                    <segue destination="pD5-i2-BXw" kind="show" identifier="listSelect" id="NQ9-7G-qfA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.92549019607843142" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xvw-rz-UgO" firstAttribute="bottom" secondItem="2UY-FC-JGe" secondAttribute="bottom" constant="310" id="M7z-8h-ZOm"/>
+                            <constraint firstItem="2UY-FC-JGe" firstAttribute="top" secondItem="Jhg-Pg-RR0" secondAttribute="bottom" constant="73" id="N8I-jL-Lks"/>
+                            <constraint firstItem="Jhg-Pg-RR0" firstAttribute="centerX" secondItem="GZE-pp-Yuq" secondAttribute="centerX" id="Sve-jj-VyN"/>
+                            <constraint firstItem="Jhg-Pg-RR0" firstAttribute="leading" secondItem="xvw-rz-UgO" secondAttribute="leading" constant="55" id="W6J-M2-Fj6"/>
+                            <constraint firstItem="Jhg-Pg-RR0" firstAttribute="leading" secondItem="2UY-FC-JGe" secondAttribute="leading" id="fgX-Y1-P2b"/>
+                            <constraint firstItem="Jhg-Pg-RR0" firstAttribute="trailing" secondItem="2UY-FC-JGe" secondAttribute="trailing" id="mLF-1l-kih"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xvw-rz-UgO"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="xdV-XD-Nga"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiL-Eg-UP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="-611.38392857142856"/>
+        </scene>
+        <!--List Generator View Controller-->
+        <scene sceneID="ad5-r6-uoQ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="pD5-i2-BXw" customClass="ListGeneratorViewController" customModule="Learn_Korean" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzd-yS-Pgc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMF-19-qD6">
+                                <rect key="frame" x="57" y="213" width="300" height="300"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <state key="normal" title="o">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Flip:" destination="pD5-i2-BXw" eventType="touchUpInside" id="M5X-6t-YN8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCQ-Bo-9HF">
+                                <rect key="frame" x="136" y="597" width="143" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="psZ-AU-xXA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="NextCharacter:" destination="pD5-i2-BXw" eventType="touchUpInside" id="hdO-vl-Xul"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBF-bw-xyc">
+                                <rect key="frame" x="20" y="44" width="71" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="pD5-i2-BXw" eventType="touchUpInside" id="9XT-H1-VFH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.92549019607843142" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QMF-19-qD6" firstAttribute="top" secondItem="suO-Qp-LzW" secondAttribute="top" constant="169" id="Fzh-0V-oWR"/>
+                            <constraint firstItem="HCQ-Bo-9HF" firstAttribute="leading" secondItem="suO-Qp-LzW" secondAttribute="leading" constant="136" id="HU2-3Q-SUO"/>
+                            <constraint firstItem="QMF-19-qD6" firstAttribute="leading" secondItem="suO-Qp-LzW" secondAttribute="leading" constant="57" id="Tgg-qh-sRQ"/>
+                            <constraint firstItem="suO-Qp-LzW" firstAttribute="bottom" secondItem="HCQ-Bo-9HF" secondAttribute="bottom" constant="134" id="U8K-ix-ZoV"/>
+                            <constraint firstItem="HCQ-Bo-9HF" firstAttribute="top" secondItem="QMF-19-qD6" secondAttribute="bottom" constant="84" id="aDA-al-E45"/>
+                            <constraint firstItem="QMF-19-qD6" firstAttribute="centerX" secondItem="hzd-yS-Pgc" secondAttribute="centerX" id="qAd-mi-x6L"/>
+                            <constraint firstItem="QMF-19-qD6" firstAttribute="centerX" secondItem="HCQ-Bo-9HF" secondAttribute="centerX" id="vWh-aS-CLl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="suO-Qp-LzW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IPh-aJ-1PK"/>
+                    <connections>
+                        <outlet property="CharacterDisplay" destination="QMF-19-qD6" id="hCt-iu-yD4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIE-um-sUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="-1114"/>
+        </scene>
+        <!--Vowels Generator-->
+        <scene sceneID="kVa-F5-fFc">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="B6C-Ft-6L6" customClass="VowelsGenerator" customModule="Learn_Korean" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPg-hx-QMq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01o-j3-e1z">
+                                <rect key="frame" x="57" y="213" width="300" height="349"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <state key="normal" title="o">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Flip:" destination="B6C-Ft-6L6" eventType="touchUpInside" id="x9G-5c-iOF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMo-Gn-toJ">
+                                <rect key="frame" x="136" y="597" width="143" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="PMZ-kk-UMh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="NextCharacter:" destination="B6C-Ft-6L6" eventType="touchUpInside" id="7eg-J6-A8B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYm-RJ-lwM">
+                                <rect key="frame" x="20" y="44" width="71" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="B6C-Ft-6L6" eventType="touchUpInside" id="Fo6-kx-ZBa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.92549019607843142" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="01o-j3-e1z" firstAttribute="leading" secondItem="x4a-fR-LES" secondAttribute="leading" constant="57" id="4VC-qR-wB2"/>
+                            <constraint firstItem="01o-j3-e1z" firstAttribute="centerX" secondItem="tPg-hx-QMq" secondAttribute="centerX" id="DDi-sW-oHI"/>
+                            <constraint firstItem="x4a-fR-LES" firstAttribute="bottom" secondItem="nMo-Gn-toJ" secondAttribute="bottom" constant="134" id="Qxg-HR-zz0"/>
+                            <constraint firstItem="nMo-Gn-toJ" firstAttribute="leading" secondItem="x4a-fR-LES" secondAttribute="leading" constant="136" id="exi-fY-L6m"/>
+                            <constraint firstItem="01o-j3-e1z" firstAttribute="top" secondItem="x4a-fR-LES" secondAttribute="top" constant="169" id="irr-iM-ZgE"/>
+                            <constraint firstItem="nMo-Gn-toJ" firstAttribute="top" secondItem="01o-j3-e1z" secondAttribute="bottom" constant="84" id="nb8-UY-da2"/>
+                            <constraint firstItem="01o-j3-e1z" firstAttribute="centerX" secondItem="nMo-Gn-toJ" secondAttribute="centerX" id="tvH-UQ-B16"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x4a-fR-LES"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="COm-rK-MeZ"/>
+                    <connections>
+                        <outlet property="CharacterDisplay" destination="01o-j3-e1z" id="CYV-QC-HsK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqO-mj-neN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="44"/>
+        </scene>
+        <!--Consonant Names Generator-->
+        <scene sceneID="par-oE-yFT">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="1Rn-4I-LSV" customClass="ConsonantNamesGenerator" customModule="Learn_Korean" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tbo-U5-3Yb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWs-pg-Al2">
+                                <rect key="frame" x="57" y="213" width="300" height="349"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <state key="normal" title="o">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Flip:" destination="1Rn-4I-LSV" eventType="touchUpInside" id="LUv-dL-MfF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t54-0a-yEg">
+                                <rect key="frame" x="136" y="597" width="143" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="BRI-mk-qfY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="NextCharacter:" destination="1Rn-4I-LSV" eventType="touchUpInside" id="32M-eG-G8N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXl-39-jJq">
+                                <rect key="frame" x="20" y="44" width="71" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="1Rn-4I-LSV" eventType="touchUpInside" id="hJV-Ff-hYB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.92549019610000005" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t54-0a-yEg" firstAttribute="leading" secondItem="ZCl-Es-B6e" secondAttribute="leading" constant="136" id="DZA-25-l8f"/>
+                            <constraint firstItem="ZCl-Es-B6e" firstAttribute="bottom" secondItem="t54-0a-yEg" secondAttribute="bottom" constant="134" id="Hpt-Tl-jxb"/>
+                            <constraint firstItem="NWs-pg-Al2" firstAttribute="leading" secondItem="ZCl-Es-B6e" secondAttribute="leading" constant="57" id="LI6-2D-lPU"/>
+                            <constraint firstItem="NWs-pg-Al2" firstAttribute="centerX" secondItem="t54-0a-yEg" secondAttribute="centerX" id="X7E-Lz-2qy"/>
+                            <constraint firstItem="t54-0a-yEg" firstAttribute="top" secondItem="NWs-pg-Al2" secondAttribute="bottom" constant="84" id="qRk-7H-wQY"/>
+                            <constraint firstItem="NWs-pg-Al2" firstAttribute="centerX" secondItem="tbo-U5-3Yb" secondAttribute="centerX" id="xom-Tl-9Ok"/>
+                            <constraint firstItem="NWs-pg-Al2" firstAttribute="top" secondItem="ZCl-Es-B6e" secondAttribute="top" constant="169" id="zza-Kr-jp2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZCl-Es-B6e"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CUg-u2-kCC"/>
+                    <connections>
+                        <outlet property="CharacterDisplay" destination="NWs-pg-Al2" id="PDZ-KY-s3D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOM-f1-YUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="781"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_bkgd" width="126" height="30"/>
+    </resources>
+</document>
