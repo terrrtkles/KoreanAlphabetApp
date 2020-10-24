@@ -2,6 +2,6 @@
 
 A flashcard style iOS application used to practice memorizing the Korean alphabet. Card sets include consonants, vowels and consonant names.
 
-![](Assets/Screenshots/menu.png=415x855 "Menu Screen") 
+![menu](Assets/Screenshots/menu.png){:height="415px" width="855px"} 
 
-![](Assets/Screenshots/g.png=285x591 "Consonant Screen")
+![cons](Assets/Screenshots/g.png){:height="285px" width="591px"}
